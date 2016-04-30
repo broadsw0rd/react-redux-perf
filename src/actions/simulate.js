@@ -14,6 +14,8 @@ function updatePair () {
 }
 
 function simulate () {
+  setInterval(updatePair, 13)
+
   setInterval(updatePair, 21)
 
   setInterval(updatePair, 34)

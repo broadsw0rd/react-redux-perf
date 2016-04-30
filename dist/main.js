@@ -13466,7 +13466,8 @@
             });
         }
         function simulate() {
-            setInterval(updatePair, 21), setInterval(updatePair, 34), setInterval(updatePair, 55);
+            setInterval(updatePair, 13), setInterval(updatePair, 21), setInterval(updatePair, 34), 
+            setInterval(updatePair, 55);
         }
         Object.defineProperty(exports, "__esModule", {
             value: !0
