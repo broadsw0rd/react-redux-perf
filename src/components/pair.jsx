@@ -9,9 +9,6 @@ class Pair extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    if (nextProps.value !== this.props.value) {
-      console.log('hi')
-    }
     this.setState({
       direction: nextProps.value > this.props.value ? 'up' : 'down'
     })
