@@ -1,0 +1,56 @@
+{
+  "name": "react-redux-perf",
+  "version": "1.0.0",
+  "description": "Dead simple performance test for official React bindings for Redux",
+  "keywords": [
+    "react",
+    "redux",
+    "react-redux"
+  ],
+  "license": "MIT",
+  "homepage": "http://broadsw0rd.github.io/react-redux-perf/",
+  "bugs": {
+    "url": "https://github.com/broadsw0rd/react-redux-perf/issues",
+    "email": "broadsw.rd@yandex.ru"
+  },
+  "author": {
+    "name": "Vladimir Bykov",
+    "email": "broadsw.rd@yandex.ru",
+    "url": "https://github.com/broadsw0rd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/broadsw0rd/react-redux-perf"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.0",
+    "envify": "^3.4.0",
+    "uglify-js": "^2.6.1"
+  },
+  "dependencies": {
+    "chance": "^1.0.2",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "6to5": "browserify src/main.jsx > dist/main.js"
+  }
+}
