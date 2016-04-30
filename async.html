@@ -24,6 +24,7 @@
       var script = document.createElement('script')
       script.onload = function() {
         var stats = new Stats()
+        stats.showPanel(2)
         document.body.appendChild(stats.dom)
         requestAnimationFrame(function loop() {
           stats.update()
