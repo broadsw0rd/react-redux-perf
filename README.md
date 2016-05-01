@@ -14,4 +14,46 @@ Sync | Async
 
 ## Abount Async
 
+Instead of synchronously update components state on [each store state changes](https://github.com/reactjs/react-redux/blob/master/src/components/connect.js#L199) we can put component which should be updated to the queue and with 60 FPS frequency update each component in queue:
+
+```js 
+var components = []
+
+function digest () {
+  for (var i = 0; i < components.length; i++) {
+    var component = components[i]
+    if (component.shouldHandleStoreStateChange) {
+      component.handleChange()
+    }
+  }
+  requestAnimationFrame(digest)
+}
+
+digest()
+
+// ...
+
+trySubscribe() {
+  if (shouldSubscribe && !this.unsubscribe) {
+    this.unsubscribe = this.store.subscribe(this.queueChanges.bind(this))
+    this.handleChange()
+    components.push(this)
+  }
+}
+
+queueChanges () {
+  this.shouldHandleStoreStateChange = true
+}
+
+handleChange() {
+
+  // ...
+  
+  this.hasStoreStateChanged = true
+  this.shouldHandleStoreStateChange = false
+  this.setState({ storeState })
+}
+
+```
+
 ## V8 Bailout reasons
