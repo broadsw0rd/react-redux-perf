@@ -9,8 +9,9 @@ Dead simple performance test of the official React bindings for Redux
 Sync | Async
 --------| -----------
 [DevTools Profiler Result](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/sync-profiler.cpuprofile) | [DevTools Profiler Result](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/async-profiler.cpuprofile)
-![](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/sync-chart.png) | ![](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/async-chart.png) 
-![](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/sync-mobile-1.png) | ![](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/async-mobile-1.png)
+![Flame chart](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/sync-chart.png) | ![Flame chart](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/async-chart.png) 
+![Rendering IE mobile](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/sync-mobile-1.png) | ![Rendering IE mobile](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/async-mobile-1.png)
+![Task Manager](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/sync-task-manager.png) | ![Task Manager](https://raw.githubusercontent.com/broadsw0rd/react-redux-perf/master/perf-results/async-task-manager.png)
 
 ## Abount Async
 
