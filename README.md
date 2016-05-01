@@ -1,5 +1,5 @@
 # [react-redux](https://github.com/reactjs/react-redux) performance test
-Dead simple performance test for official React bindings for Redux
+Dead simple performance test of the official React bindings for Redux
 
 - [Sync](http://broadsw0rd.github.io/react-redux-perf/sync.html)
 - [Async](http://broadsw0rd.github.io/react-redux-perf/async.html)
@@ -14,10 +14,10 @@ Sync | Async
 
 ## Abount Async
 
-Instead of synchronously update components state on [each store state changes](https://github.com/reactjs/react-redux/blob/master/src/components/connect.js#L199) we can put component which should be updated to the queue and with 60 FPS frequency update each component in queue:
+Instead of synchronously update components state on [each store state changes](https://github.com/reactjs/react-redux/blob/master/src/components/connect.js#L199) we can put component, which should be updated, to the queue and with 60 FPS frequency update each component in queue:
 
 ```js 
-var components = []
+var components = [] // list of all connected components(containers)
 
 function digest () {
   for (var i = 0; i < components.length; i++) {
