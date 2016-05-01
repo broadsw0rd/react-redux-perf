@@ -50,6 +50,7 @@
     ]
   },
   "scripts": {
-    "6to5": "browserify src/main.jsx | uglifyjs -c warnings=false -b > dist/main.js"
+    "build:sync": "browserify src/main.jsx > dist/main.sync.js",
+    "build:async": "browserify src/main.jsx > dist/main.async.js"
   }
 }
