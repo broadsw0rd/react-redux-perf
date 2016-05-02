@@ -59,5 +59,3 @@ handleChange() {
 }
 
 ```
-
-## V8 Bailout reasons
