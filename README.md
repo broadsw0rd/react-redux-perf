@@ -16,9 +16,9 @@ Sync | Async
 
 
 
-## Abount Async
+## About Async
 
-Although `react-redux` positioning itself like performant solution for connecting react components to the redux store,
+Although `react-redux` positioning itself like performant solution for connecting react components to the redux store.
 However it rerender components on each store state changes [synchronously](https://github.com/reactjs/react-redux/blob/master/src/components/connect.js#L199), 
 that can be an issue, if store changes very frequently. 
 So instead of that we can put component, which should be updated, to the queue and with 60 FPS frequency update each component in queue:
