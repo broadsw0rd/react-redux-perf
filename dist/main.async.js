@@ -7043,6 +7043,8 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps) {
       return mergedProps;
     }
 
+    var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame
+
     var components = []
 
     function digest () {
