@@ -68,6 +68,7 @@ handleChange() {
 - increases performance up to 1.5x-2.0x and battery live, particularly on mobile devices
 - doesn`t patches redux core like [redux-batched-subscribe](https://github.com/tappleby/redux-batched-subscribe), what prevents 	
 [inconsistency](https://github.com/tappleby/redux-batched-subscribe/issues/8) with redux after major releases
+- could be optional like `pure` option
 
 **Cons**
 
