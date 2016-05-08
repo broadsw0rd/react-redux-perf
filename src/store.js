@@ -14,6 +14,6 @@ function digest () {
 
 digest()
 
-var store = createStore(pairs, [], batchedSubscribe((nofity) => lazyNotify = nofity))
+var store = createStore(pairs, [], batchedSubscribe((nofity) => { lazyNotify = nofity }))
 
 export default store

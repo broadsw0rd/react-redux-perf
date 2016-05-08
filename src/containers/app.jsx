@@ -14,14 +14,14 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="row">
+      <div className='row'>
         {this.props.groups.map((group, idx) => {
           return (
-            <div className="col-lg-4" key={idx}>
-              <ul className="list-group">
+            <div className='col-lg-4' key={idx}>
+              <ul className='list-group'>
                 {group.map((pair) => {
                   return (
-                    <Pair key={pair.id} name={pair.name} value={pair.value}/>
+                    <Pair key={pair.id} name={pair.name} value={pair.value} />
                   )
                 })}
               </ul>
