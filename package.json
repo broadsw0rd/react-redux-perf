@@ -34,7 +34,8 @@
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-redux": "^4.4.5",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "redux-batched-subscribe": "^0.1.4"
   },
   "browserify": {
     "transform": [
@@ -50,7 +51,6 @@
     ]
   },
   "scripts": {
-    "build:sync": "browserify src/main.jsx > dist/main.sync.js",
-    "build:async": "browserify src/main.jsx > dist/main.async.js"
+    "build": "browserify src/main.jsx > dist/main.js"
   }
 }
