@@ -26442,9 +26442,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame;
 
 var lazyNotify = function lazyNotify() {};
+var noop = function noop() {};
 
 function digest() {
   lazyNotify();
+  lazyNotify = noop;
   requestAnimationFrame(digest);
 }
 

@@ -6,9 +6,11 @@ import pairs from './reducers/pairs.js'
 var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame
 
 var lazyNotify = function () {}
+var noop = function () {}
 
 function digest () {
   lazyNotify()
+  lazyNotify = noop
   requestAnimationFrame(digest)
 }
 
